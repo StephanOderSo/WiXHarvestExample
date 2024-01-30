@@ -1,0 +1,16 @@
+﻿<Project Sdk="WixToolset.Sdk/4.0.3">
+
+	<ItemGroup>
+		<HarvestDirectory Include="..\HarvestFolder">
+			<ComponentGroupName>HarvestedComponents</ComponentGroupName>
+			<DirectoryRefId>INSTALLFOLDER</DirectoryRefId>
+			<SuppressRootDirectory>true</SuppressRootDirectory>
+		</HarvestDirectory>
+
+		<BindPath Include="..\HarvestFolder"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="WixToolset.Heat" Version="4.0.3" />
+	</ItemGroup>
+</Project>

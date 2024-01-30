@@ -1,0 +1,9 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Package Name="WixHarvestExample" Manufacturer="TODO Manufacturer123" Version="2.0.3.1" UpgradeCode="a4eb37ff-af3a-4445-a324-f63ec9aac3e3">
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+		<Feature Id="Main">
+			<ComponentGroupRef Id="HarvestedComponents"/>
+		</Feature>
+	</Package>
+</Wix>
